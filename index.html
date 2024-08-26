@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="maincontainer">
+    <div class="innercontainer">
+      <h1>Desserts</h1>
+      <div class="carts">
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-waffle-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Waffle</span>
+          <span class="fullname">Waffle with Berries</span>
+          <span class="price">6.50</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-creme-brulee-desktop.jpg" alt="Crème">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Crème Brûlée</span>
+          <span class="fullname">Vanilla Bean Crème Brûlée</span>
+          <span class="price">7.00</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-macaron-desktop.jpg" alt="Macaron">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Macaron</span>
+          <span class="fullname">Macaron Mix of Five</span>
+          <span class="price">8.00</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-tiramisu-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Tiramisu</span>
+          <span class="fullname">Classic Tiramisu</span>
+          <span class="price">5.50</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-baklava-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Baklava</span>
+          <span class="fullname">Pistachio Baklava</span>
+          <span class="price">4.00</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-meringue-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Pie</span>
+          <span class="fullname">Lemon Meringue Pie</span>
+          <span class="price">5.00</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-cake-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Cake</span>
+          <span class="fullname">Red Velvet Cake</span>
+          <span class="price">4.50</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-brownie-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Brownie</span>
+          <span class="fullname">Salted Caramel Brownie</span>
+          <span class="price">4.50</span>
+        </div>
+        <div class="cart-items">
+          <div class="relative">
+            <img class="foodimg" src="./assets/images/image-panna-cotta-desktop.jpg" alt="Waffle">
+            <div class="cartclick">
+              <img src="./assets/images/icon-add-to-cart.svg" class="addtocartsvg">
+              <span class="addtocart">Add to Cart</span>
+            </div>
+          </div>
+          <span class="name">Panna Cotta</span>
+          <span class="fullname">Vanilla Panna Cotta</span>
+          <span class="price">6.50</span>
+        </div>
+      </div>
+    </div>
+    <div class="cart-total">
+      <h1 class="yourcart">Your Cart (<span class="numCarts"></span>)</h1>
+      <span class="yourcartitem">Your added items will appear here</span>
+      <img src="./assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart" class="empty-cart">
+      <div class="carbon">
+        <img src="./assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">
+        <span>This is a carbon-neautral delievry</span>
+      </div>
+      <div class="confirm-order">Confirm Order</div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>
